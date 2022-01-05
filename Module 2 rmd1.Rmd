@@ -1,0 +1,86 @@
+---
+title: "Module 2:R Markdown Document 1"
+author: "Christian Ruiz"
+date: "1/5/2022"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# This is a level 1 header
+
+## R Markdown
+
+### This is a level 3 header
+
+Here is a link to [GOOGLE](www.google.com)
+
+Here is word in **bold** and another word in __bold__
+
+Here is a word in *italics* and another word in _italics_
+
+When we compile documents, we use the `rmarkdown` package
+
+To higlight r code (that is not executable) but the put 3 back ticks at the beginning and end of text.
+
+```
+mean()
+```
+Here is an example of a non numbered list:
+(NOTE: always indent 4 spaces between points)
+
+* Breakfast
+    - food
+        + eggs
+        + toast
+        + bacon
+    - drink
+        + apple juice
+
+Here is an example of a numbered list
+
+1. Breakfast
+    a. food
+        i. eggs
+        ii. toast
+        iii. bacon
+    b. drink
+        i. apple juice
+
+
+> This is an example of a block quote
+> This is a list inside a block quote
+>
+> 1. item 1
+> 2. item 2
+
+#use this idea for footnotes or caveats to protocols
+
+> This is an example of a nested block quote
+>
+>> This line is nested
+
+To put code in block quotes, add 5 spaces after the greater than symbol followed by r code
+
+>     mean(x)
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
