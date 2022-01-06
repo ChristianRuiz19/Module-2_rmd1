@@ -100,3 +100,39 @@ knitr::kable(head(cars),
 ## Insert Equation
 
 $$ Y = \beta_O + \beta_1x $$
+
+## Insert images
+
+# insert images from local computer
+Here is an image inserted
+
+![sunstar](sunstar.png)
+
+# insert images off the web (does not work for word or pdf)
+Here is the r logo
+
+![r logo](https://www.r-project.org/logo/Rlogo.svg)
+
+## Insert giff
+
+![sunstar](sunstar.gif)
+
+# Insert Videos
+
+![sunstar](sunstar.mp4)
+
+
+
+There is an R package called vebmedr which allowd embedding
+youtube videos
+
+
+# Insert footnotes
+
+Here is a footnote reference [^1] and another [^longnote]
+
+Here is an inline ^[Inline notes to write, since you don't have to pick an identifier and move down to type the note]
+
+[^1]: Here is the footnote
+[^longnote]: Here's one with multiple blocks
+
